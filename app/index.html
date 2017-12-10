@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta stuff -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Commits Finder</title>
+
+        <!-- References -->
+        <link href="vendor/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/theme.css">
+    </head>
+    <body>
+
+    <!-- Main App Section -->
+    <div class="container">
+      <div class="col-md-4 col-md-offset-4 app">
+        <label id="title">Returns the requested commit of a Github repository.</label><br>
+
+	    <label for="nick">Repository owner</label>
+		<input type="text" id="nick" placeholder="Ex.: JohnDoe">
+
+	    <label for="repo">Repository name</label>
+		<input type="text" id="repo" placeholder="Ex.: SpaceInvadersGame">
+
+        <label for="commitNumber">Commit number</label>
+        <input type="number" id="commitNumber" placeholder="Number of the commit that you want to see.">
+
+	    <input type="button" id="submit-btn" value="Go to first commit">
+      </div>
+    </div>
+
+    <!-- JS References -->
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; } </script>
+    <script src="vendor/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/commit.js"></script>
+    <script>if (window.module) module = window.module;</script>
+
+    </body>
+</html>

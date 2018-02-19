@@ -11,7 +11,8 @@ $( document ).ready( function(){
 		if ( nick.val().length < 1 || repo.val().length < 1 || commitNumber.val().length < 1 ) {
 			window.alert( 'Nick, Repositório or commits number invalid.' );
 			return false;
-		} else return true;
+		} 
+		return true;
 	}
 
 	submitBtn.on({

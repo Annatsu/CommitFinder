@@ -67,7 +67,7 @@ function init() {
 
     submitBtn.onclick = () => {
         trimValues(nick, repo);
-        if (isValid) {
+        if (isValid()) {
             // Create a new xhttp request.
             const xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {

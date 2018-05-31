@@ -62,8 +62,7 @@ function init() {
     const isValid = () => (
         nick.value.length < 1 ||
         repo.value.length < 1 ||
-        commitNumber.value.length < 1 ?
-        false : true
+        !commitNumber.value.length < 1
     );
 
     submitBtn.onclick = () => {

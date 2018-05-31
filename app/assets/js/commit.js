@@ -59,12 +59,12 @@ function init() {
      * 
      * @returns {boolean} Returns if it's valid or not.
      */
-    const isValid = () => {
+    const isValid = () => (
         nick.value.length < 1 ||
         repo.value.length < 1 ||
         commitNumber.value.length < 1 ?
         false : true
-    };
+    );
 
     submitBtn.onclick = () => {
         trimValues(nick, repo);

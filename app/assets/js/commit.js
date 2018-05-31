@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', event => {
     /**
      * The user nickname.
      */
-	const nick = document.getElementById('nick');
+    const nick = document.getElementById('nick');
     
     /**
      * The selected repository.

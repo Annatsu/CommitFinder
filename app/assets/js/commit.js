@@ -1,7 +1,19 @@
 /**
  * Document Ready Event.
  */
-document.addEventListener('DOMContentLoaded', event => {
+if (
+    document.readyState === 'complete' ||
+    (
+        document.readyState !== 'loading' &&
+        !document.documentElement.doScroll
+    )
+)
+    init();
+else
+    document.addEventListener('DOMContentLoaded', init);
+
+                          
+function init() {
     /**
      * Object to hold commit data.
      */
@@ -80,4 +92,4 @@ document.addEventListener('DOMContentLoaded', event => {
         } 
         else return;
     }
-});
+}
